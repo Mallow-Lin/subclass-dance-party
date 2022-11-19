@@ -29,11 +29,19 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     window.dancers.push(dancer);
-
-    // $('bouncy-dancer').click(function() {
-    //   $(this).effect('bounce', {time: 4}, 100);
-    // });
   });
+
+  $('.lineUpButton').on('click', function(event) {
+    var top = $('body').height() / 2;
+    var left = 50;
+    window.dancers.forEach(function(dancer) {
+      dancer.lineUp(top, left);
+      left += 50;
+      var css = {'display': 'flex', 'align-items' : 'center'};
+      $(dancer).css(css);
+    });
+  });
+
 });
 
 
