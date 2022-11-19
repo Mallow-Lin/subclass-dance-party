@@ -11,7 +11,8 @@ makeBouncyDancer.prototype.step = function() {
   // top
   // left
   // this.setPosition(top, left)
-  //this.$node.effect('bounce', {times: 4}, 200);
+  this.$node.effect('bounce', {times: 4}, 200);
+  this.$node.animate({'left': Math.random() * 1400, 'top': Math.random() * 800}, 3000);
   // this.$node.css(styleSettings);
-  this.$node.toggle();
+  //this.$node.slideToggle();
 };
