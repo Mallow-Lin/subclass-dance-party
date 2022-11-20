@@ -53,7 +53,7 @@ makeDancer.prototype.setPosition = function(top, left) {
 
 makeDancer.prototype.lineUp = function() {
   var styleSettings = {
-    left: '100px'
+    'left': 100
   };
   this.$node.css(styleSettings);
 };

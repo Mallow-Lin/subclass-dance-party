@@ -25,8 +25,7 @@ makeRickAstleyDancer.prototype.shake = function() {
 makeRickAstleyDancer.prototype.lineUp = function() {
   // makeDancer.prototype.lineUp.call(this);
   // this.$node.toggle(true);
-  this.$node.toggle();
   this.$node.animate({
-    'left':1500
+    'left': 1500
   });
 };
