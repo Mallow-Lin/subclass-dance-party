@@ -15,7 +15,6 @@ makeBouncyDancer.prototype.step = function() {
 };
 
 makeBouncyDancer.prototype.bounce = function() {
-
   this.$node.animate({'left': $('body').width() * Math.random(), 'top': $('body').height() * Math.random()}, 100);
 };
 
