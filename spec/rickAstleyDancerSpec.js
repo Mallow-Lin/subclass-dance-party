@@ -12,7 +12,7 @@ describe('rickAstleyDancer', function() {
     expect(rickAstleyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node rickAstley', function() {
+  it('should have a step function that makes its node shake', function() {
     sinon.spy(rickAstleyDancer.$node, 'effect');
     rickAstleyDancer.step();
     expect(rickAstleyDancer.$node.effect.called).to.be.true;

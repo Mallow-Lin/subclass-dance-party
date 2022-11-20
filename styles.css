@@ -21,18 +21,27 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
 .dancer{
-  border:10px solid red;
+  /* border:10px solid red; */
   border-radius:10px;
   position:absolute;
+  height: 100px;
+  width: 100px;
+  content: url("https://bestanimations.com/media/stars/807337127star-heart-gif.gif");
 }
+
  .bouncy-dancer{
-  border:10px solid green;
   border-radius:10px;
-  position:relative;
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  content: url("https://media4.giphy.com/media/XyChxZCKzwNmI6TRUQ/giphy.gif?cid=790b7611047fda646335e2ea47af1c166c6cdef2e5413c28&rid=giphy.gif&ct=s")
 }
 .RickAstley-dancer{
-  border:10px solid blue;
   border-radius:10px;
-  position:relative;
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  content: url("https://media.tenor.com/fjJsgqytJkQAAAAM/rick-astley-rick.gif")
 }

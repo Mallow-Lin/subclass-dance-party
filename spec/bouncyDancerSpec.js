@@ -12,8 +12,8 @@ describe('bouncyDancer', function() {
     expect(bouncyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it('should have a step function that makes its node bouncy', function() {
-    sinon.spy(bouncyDancer.$node, 'effect');
+  it('should have a step function that makes its node blinky', function() {
+    sinon.spy(bouncyDancer.$node, 'toggle');
     bouncyDancer.step();
     expect(bouncyDancer.$node.effect.called).to.be.true;
   });

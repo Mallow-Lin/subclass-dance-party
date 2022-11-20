@@ -32,14 +32,10 @@ $(document).ready(function() {
   });
 
   $('.lineUpButton').on('click', function(event) {
-    var top = $('body').height() / 2;
-    var left = 50;
-    window.dancers.forEach(function(dancer) {
-      dancer.lineUp(top, left);
-      left += 50;
-      var css = {'display': 'flex', 'align-items' : 'center'};
-      $(dancer).css(css);
-    });
+
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
   });
 
 });
